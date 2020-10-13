@@ -15,7 +15,7 @@ public class AccountService {
 
     public User login(String username, String password) {
         User user = null;
-        if ( (username.contentEquals("abe") || username.contentEquals("barb")) && password.contentEquals("password")) {
+        if ( password.contentEquals("password")) {
             user = new User(username);
         }
         return user;
